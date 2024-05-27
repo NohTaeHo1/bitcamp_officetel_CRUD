@@ -1,4 +1,4 @@
-package com.von.officetel.officetel.model;
+package com.von.officetel.lease.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,14 +12,20 @@ import lombok.*;
 @Builder
 @Getter
 @ToString(exclude = "id")
-public class Officetel {
+public class Lease {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String address;
     private String buildingName;
-    private Long area;
-    private Long unitNumber;
+    private String address;
+    private String propertyType;
+    private String price;
+    private String area;
+    private String floor;
+    private String direction;
+    private String description;
+    private String owner;
+    private String listingDate;
 
 }

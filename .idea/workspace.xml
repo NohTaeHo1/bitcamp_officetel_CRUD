@@ -1,15 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ed46041-8ea9-4407-9b2e-f253ad410c0a" name="Changes" comment="" />
+    <list default="true" id="7ed46041-8ea9-4407-9b2e-f253ad410c0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/officetel/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/officetel/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/common/model/MessengerVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/config/QueryDslConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/lease/model/LeaseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/lease/repository/LeaseJPQLRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/lease/repository/LeaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/lease/service/LeaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/officetel/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/OfficetelApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/OfficetelApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/officetel/controller/OfficetelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/lease/controller/LeaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/officetel/controller/OfficetelRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/lease/controller/LeaseRouter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/officetel/model/Officetel.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/lease/model/Lease.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/officetel/model/OfficetelDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/officetel/repository/OfficetelDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/lease/repository/LeaseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/officetel/repository/OfficetelDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/lease/repository/LeaseDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/officetel/repository/OfficetelRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/officetel/service/OfficetelService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/officetel/service/OfficetelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/von/officetel/lease/service/LeaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/test/java/com/von/officetel/OfficetelApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/test/java/com/von/officetel/LeaseApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/officetel">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/officetel">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="officetel" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="officetel" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NohTaeHo1&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NohTaeHo1/bitcamp_officetel_CRUD.git&quot;,
+    &quot;accountId&quot;: &quot;df6d9835-a6b2-4b75-9151-a499ecfd6b7f&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
 }]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2gwK0ZmmGFEJiBqpbVMpqei7uUs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -17,12 +108,49 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build officetel.executor": "Run",
+    "Gradle.C:/Users/bitcamp/docker_pod/officetel/officetel/build.gradle.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/bitcamp/docker_pod/officetel/officetel",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "trusted.hosts",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora_aws",
+      "mysql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bitcamp\docker_pod\officetel\officetel" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.von.officetel.common.model" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="OfficetelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="officetel.officetel.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.von.officetel.OfficetelApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -40,10 +168,23 @@
       <option name="presentableId" value="Default" />
       <updated>1716602979845</updated>
       <workItem from="1716602981024" duration="225000" />
+      <workItem from="1716770390563" duration="216000" />
+      <workItem from="1716770621689" duration="68000" />
+      <workItem from="1716770703296" duration="1305000" />
+      <workItem from="1716772030486" duration="81000" />
+      <workItem from="1716772121891" duration="3049000" />
+      <workItem from="1716787512211" duration="76000" />
+      <workItem from="1716787648987" duration="5332000" />
+      <workItem from="1716796002600" duration="821000" />
+      <workItem from="1716796854764" duration="11354000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

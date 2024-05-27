@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/officetel.iml" filepath="$PROJECT_DIR$/.idea/officetel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/officetel.officetel.main.iml" filepath="$PROJECT_DIR$/.idea/modules/officetel.officetel.main.iml" />
     </modules>
   </component>
 </project>

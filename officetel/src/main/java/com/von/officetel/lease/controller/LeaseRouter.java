@@ -1,10 +1,9 @@
-package com.von.officetel.officetel.controller;
+package com.von.officetel.lease.controller;
 
-import com.von.officetel.officetel.repository.OfficetelDAOImpl;
-import com.von.officetel.officetel.repository.OfficetelRepository;
+import com.von.officetel.lease.repository.LeaseDAOImpl;
+import com.von.officetel.lease.repository.LeaseRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -12,10 +11,10 @@ import java.util.List;
 @Slf4j
 @Component
 @RequiredArgsConstructor
-public class OfficetelRouter {
+public class LeaseRouter {
 
-    private final OfficetelRepository repository;
-    private final OfficetelDAOImpl DAOservice;
+    private final LeaseRepository repository;
+    private final LeaseDAOImpl DAOservice;
 
     public List<?> execute(String type, int pageNumber, int pageSize) {
 

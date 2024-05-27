@@ -1,8 +1,10 @@
-package com.von.officetel.officetel.controller;
+package com.von.officetel.lease.controller;
 
 import com.von.officetel.common.model.Box;
+import com.von.officetel.common.model.MessengerVo;
 import com.von.officetel.common.service.impl.PageServiceImpl;
-import com.von.officetel.officetel.service.OfficetelServiceImpl;
+import com.von.officetel.lease.model.LeaseDTO;
+import com.von.officetel.lease.service.LeaseServiceImpl;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.RequiredArgsConstructor;
@@ -17,14 +19,20 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
 @RequiredArgsConstructor
-@RequestMapping(path = "/api/players")
+@RequestMapping(path = "/api/officetel")
 @ApiResponses(value = {
         @ApiResponse(responseCode = "400", description = "Invalid ID supplied"),
         @ApiResponse(responseCode = "404", description = "dd")})
-public class OfficetelController {
-    private final OfficetelServiceImpl officeService;
-    private final OfficetelRouter router;
+public class LeaseController {
+    private final LeaseServiceImpl LeaseService;
+    private final LeaseRouter router;
     private final PageServiceImpl pageService;
+
+    @PostMapping( "/insert")
+    public ResponseEntity<MessengerVo> insert(@RequestBody LeaseDTO dto) {
+        log.info("입력받은 정보 : {}", dto );
+        return ResponseEntity.ok(LeaseService.insert(dto));
+    }
 
     @GetMapping(path = "/search")
     public ResponseEntity<?> searchPlayer(
@@ -54,4 +62,6 @@ public class OfficetelController {
         System.out.println("Execution time: " + (endTime - startTime) + " nanoseconds");
         return ResponseEntity.ok(box);
     }
+
+
 }
