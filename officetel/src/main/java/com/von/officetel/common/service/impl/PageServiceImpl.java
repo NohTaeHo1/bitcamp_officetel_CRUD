@@ -10,23 +10,22 @@ import java.util.List;
 @Service
 public class PageServiceImpl implements PageService {
 
+    public PageDTO getPageDTO(long totalCount, int pageSize, int pageNum) {
 
-    public PageDTO getPageDTO(long totalCount, int pageSize, int pageNum){
-
-        long BLOCK_SIZE = 10;
-        long blockNum = (pageNum-1)/pageSize+1;
+        final long BLOCK_SIZE = 10;
+        long blockNum = (pageNum - 1) / BLOCK_SIZE + 1;
 
         long pageCount = (totalCount % pageSize == 0) ? totalCount / pageSize : totalCount / pageSize + 1;
         long blockCount = (pageCount % BLOCK_SIZE == 0) ? pageCount / BLOCK_SIZE : pageCount / BLOCK_SIZE + 1;
 
-        long startRow = (long) (pageNum - 1) * pageSize;
-        long endRow = (((pageNum - 1) * pageSize + pageSize - 1) > totalCount) ? totalCount : (pageNum - 1) * pageSize + (pageSize - 1);
+        long startRow = (pageNum - 1) * pageSize;
+        long endRow = (pageNum * pageSize > totalCount) ? totalCount : pageNum * pageSize;
 
         long startPage = (blockNum - 1) * BLOCK_SIZE + 1;
-        long endPage = ((blockNum - 1) * BLOCK_SIZE + 1 + (BLOCK_SIZE - 1) > pageCount) ? pageCount : (blockNum - 1) * BLOCK_SIZE + 1 + (BLOCK_SIZE - 1);
+        long endPage = (blockNum * BLOCK_SIZE > pageCount) ? pageCount : blockNum * BLOCK_SIZE;
 
-        boolean existPrev = (blockNum != 1) ? true : false;
-        boolean existNext = (blockNum != (blockCount)) ? true : false;
+        boolean existPrev = blockNum > 1;
+        boolean existNext = blockNum < blockCount;
 
         long prevBlock = blockNum - 1;
         long nextBlock = blockNum + 1;

@@ -9,13 +9,12 @@ services:
       - ~/docker/mysql/officetel/var/log/mysql:/var/log/mysql
     environment:
       - MYSQL_DATABASE=officeteldb
-      - MYSQL_USER=root
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_ROOT_HOST=%
     command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
     restart: always
     ports:
-      - "3310:3306"
+      - "3306:3306"
     networks:
       - test_env
   application:

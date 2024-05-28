@@ -34,9 +34,10 @@ public class PageDTO {
     private Long nextBlock;
     private Long prevBlock;
 
+    @Builder.Default
     private Boolean existPrev = false;
+
+    @Builder.Default
     private Boolean existNext = false;
-
-
 
 }
