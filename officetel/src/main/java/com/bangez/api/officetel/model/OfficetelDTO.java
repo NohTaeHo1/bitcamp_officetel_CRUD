@@ -26,9 +26,12 @@ public class OfficetelDTO {
     private String description;
     private String owner;
     private LocalDate listingDate;
+    private String user;
+
 
     @QueryProjection
-    public OfficetelDTO(String buildingName, Long id, Long ownerType, Long addressId, Long propertyType, Long price, Long monthlyRent, Long area, String floor, String direction, String description, String owner, LocalDate listingDate) {
+    public OfficetelDTO(String buildingName, Long id, Long ownerType, Long addressId, Long propertyType, Long price, Long monthlyRent, Long area, String floor, String direction, String description, String owner, LocalDate listingDate, String user
+) {
         this.buildingName = buildingName;
         this.id = id;
         this.ownerType = ownerType;
@@ -42,6 +45,7 @@ public class OfficetelDTO {
         this.description = description;
         this.owner = owner;
         this.listingDate = listingDate;
+        this.user = user;
     }
 }
 

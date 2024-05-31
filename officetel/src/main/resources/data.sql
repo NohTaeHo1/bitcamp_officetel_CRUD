@@ -1,3 +1,9 @@
+insert into users (id, username, password, email, name, phone, job) values (1, 'Littletrang', 'littleT@', 'ldannel0@ovh.net', '김민준', '18-535-5338', 'VP Sales');
+insert into users (id, username, password, email, name, phone, job) values (2, 'Littlaerg', 'littleT@', 'ldannel0@ovh.net', '나비', '18-535-5338', 'VP Sales');
+insert into users (id, username, password, email, name, phone, job) values (3, 'Litwegww', 'littleT@', 'ldannel0@ovh.net', '다람쥐', '18-535-5338', 'VP Sales');
+
+
+
 INSERT INTO officetels (building_name, address_id, property_type, price, area, floor, direction, description, owner, listing_date, owner_type, monthly_rent)
 VALUES ('강남역센트럴푸르지오시티', 1, 1, 310000000, 23, '12/19층', '서향', '강남역1분거리,전망트임,임차수요 가득한 곳', '조용래세무사공인중개사사무소', '2024-05-27', 1, null);
 

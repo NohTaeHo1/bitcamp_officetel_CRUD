@@ -19,12 +19,17 @@ public class OfficetelRouter {
 
     private final OfficetelDAOImpl service;
 
-    public List<?> execute(String type, OfficetelDTO dto, Long lowCost, Long maxCost, Pageable pageable) {
+    public List<OfficetelDTO> getOfficetelByUser(OfficetelDTO dto){
+        return service.getOfficetelByUser(dto);
+    }
+
+    public List<?> execute(String type, OfficetelDTO dto, List<String> oTvalue, List<String> pTvalue, List<String> cost, Pageable pageable, Long id) {
 
         return switch (type){
             case "1" -> service.getAllOfficetel(pageable);
-            case "2" -> service.getOfficetelDynamic(dto, lowCost, maxCost, pageable);
-
+            case "2" -> service.getOfficetelDynamic(dto, oTvalue, pTvalue, cost);
+            case "3" -> service.getAllOfficetelNoPage();
+            case "4" -> service.getOfficetelById(id);
             default -> null;
         };
     }

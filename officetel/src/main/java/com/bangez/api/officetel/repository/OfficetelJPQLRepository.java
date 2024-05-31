@@ -13,7 +13,7 @@ public interface OfficetelJPQLRepository extends JpaRepository<OfficetelModel, L
 
     @Transactional
     @Modifying
-    @Query(value="insert into officetel (owner_type, building_name, addressId, property_type, price, area, floor, direction, description, owner, listing_date) values " +
+    @Query(value="insert into officetels (owner_type, building_name, address_id, property_type, price, area, floor, direction, description, owner, listing_date) values " +
             "(:#{#entity.ownerType}, :#{#entity.buildingName}, :#{#entity.addressId}, :#{#entity.propertyType}, :#{#entity.price}, :#{#entity.area}, :#{#entity.floor}, :#{#entity.direction}, :#{#entity.description}, :#{#entity.owner}, :#{#entity.listingDate})",
             nativeQuery = true)
     void insert(@Param("entity") OfficetelModel entity);

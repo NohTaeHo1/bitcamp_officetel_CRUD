@@ -11,5 +11,5 @@ public interface OfficetelDAO {
 
     List<OfficetelDTO> getAllOfficetel(Pageable pageable);
 
-    List<OfficetelDTO> getOfficetelDynamic(OfficetelDTO dto, Long lowCost, Long maxCost, Pageable pageable);
+    List<OfficetelDTO> getOfficetelDynamic(OfficetelDTO dto, List<String> oTvalue, List<String> pTvalue, List<String> cost);
 }

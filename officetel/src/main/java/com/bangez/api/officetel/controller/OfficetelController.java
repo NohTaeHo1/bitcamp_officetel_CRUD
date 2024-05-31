@@ -41,32 +41,38 @@ public class OfficetelController {
         return ResponseEntity.ok(offictelService.modify(dto));
     }
 
-    @DeleteMapping("/remove")
-    public ResponseEntity<MessengerVo> removebyId(@RequestBody Long id){
+    @DeleteMapping("/remove/{id}")
+    public ResponseEntity<MessengerVo> removebyId(@PathVariable Long id){
         return ResponseEntity.ok(offictelService.removebyId(id));
 
     }
 
-    @GetMapping(path = "/search/{page}/{size}")
+    @PostMapping(path = "/mysearch")
+    public  List<OfficetelDTO> getOfficetelByUser(@RequestBody OfficetelDTO dto){
+        return router.getOfficetelByUser(dto);
+    }
+
+    @GetMapping(path = "/search")
     public ResponseEntity<?> searchPlayer(
             @RequestParam(value = "q", required = true) String q,
             @RequestParam(value = "dto", required = false) OfficetelDTO dto ,
-            @RequestParam(value = "lowCost", required = false) Long lowCost,
-            @RequestParam(value = "maxCost", required = false) Long maxCost,
+            @RequestParam(value = "id", required = false) Long id,
+            @RequestParam(value = "oTvalue", required = false) List<String> oTvalue,
+            @RequestParam(value = "pTvalue", required = false) List<String> pTvalue,
+            @RequestParam(value = "cost", required = false) List<String> cost,
             Pageable pageable
     ) {
-        long startTime = System.nanoTime();
-
+        log.info("id" + id);
         long totalCount = offictelService.countOfficetel();
         PageDTO pageDto = pageService.getPageDTO(totalCount, pageable.getPageSize(), pageable.getPageNumber());
-        List<?> o = router.execute(q, dto, lowCost, maxCost, pageable);
+        List<?> o = router.execute(q, dto, oTvalue, pTvalue, cost, pageable, id);
 
         Box box = new Box();
         box.setPageDTO(pageDto);
         box.setList(o);
 
-        long endTime = System.nanoTime();
-        System.out.println("Execution time: " + (endTime - startTime) + " nanoseconds");
         return ResponseEntity.ok(box);
     }
+
+
 }

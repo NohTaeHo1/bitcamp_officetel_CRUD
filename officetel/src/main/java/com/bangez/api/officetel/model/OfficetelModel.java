@@ -1,9 +1,7 @@
 package com.bangez.api.officetel.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.bangez.api.user.model.User;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -21,6 +19,7 @@ public class OfficetelModel {
     private Long id;
     private Long ownerType; // 중개사 1 개인 2
     private String buildingName;
+
     private Long addressId;
     private Long propertyType; // 매매 1 월세 2 전세 3
     private Long price; // 월세는 보증금으로 적용
@@ -31,5 +30,10 @@ public class OfficetelModel {
     private String description;
     private String owner;
     private LocalDate listingDate;
+    private String user;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User writer;
 
 }
