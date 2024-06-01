@@ -19,7 +19,6 @@ public class OfficetelModel {
     private Long id;
     private Long ownerType; // 중개사 1 개인 2
     private String buildingName;
-
     private Long addressId;
     private Long propertyType; // 매매 1 월세 2 전세 3
     private Long price; // 월세는 보증금으로 적용

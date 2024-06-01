@@ -44,12 +44,6 @@ public class OfficetelController {
     @DeleteMapping("/remove/{id}")
     public ResponseEntity<MessengerVo> removebyId(@PathVariable Long id){
         return ResponseEntity.ok(offictelService.removebyId(id));
-
-    }
-
-    @PostMapping(path = "/mysearch")
-    public  List<OfficetelDTO> getOfficetelByUser(@RequestBody OfficetelDTO dto){
-        return router.getOfficetelByUser(dto);
     }
 
     @GetMapping(path = "/search")
@@ -60,12 +54,13 @@ public class OfficetelController {
             @RequestParam(value = "oTvalue", required = false) List<String> oTvalue,
             @RequestParam(value = "pTvalue", required = false) List<String> pTvalue,
             @RequestParam(value = "cost", required = false) List<String> cost,
+            @RequestParam(value = "user", required = false) String user,
             Pageable pageable
     ) {
-        log.info("id" + id);
+        log.info("user" + user);
         long totalCount = offictelService.countOfficetel();
         PageDTO pageDto = pageService.getPageDTO(totalCount, pageable.getPageSize(), pageable.getPageNumber());
-        List<?> o = router.execute(q, dto, oTvalue, pTvalue, cost, pageable, id);
+        List<?> o = router.execute(q, dto, oTvalue, pTvalue, cost, pageable, id, user);
 
         Box box = new Box();
         box.setPageDTO(pageDto);

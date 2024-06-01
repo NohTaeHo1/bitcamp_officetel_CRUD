@@ -6,12 +6,13 @@ import com.bangez.api.officetel.model.OfficetelModel;
 import com.bangez.api.officetel.model.OfficetelDTO;
 import com.bangez.api.officetel.model.QOfficetelModel;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Objects;
 
+@Log4j2
 @Service
 @RequiredArgsConstructor
 public class OfficetelDAOImpl implements OfficetelDAO {
@@ -20,16 +21,28 @@ public class OfficetelDAOImpl implements OfficetelDAO {
     private final QOfficetelModel officetel = QOfficetelModel.officetelModel;
 
 
-    public List<OfficetelDTO> getOfficetelByUser(OfficetelDTO dto){
-        return factory.selectFrom(officetel)
+    public List<OfficetelDTO> getOfficetelByUser(String user){
+        log.info("입력받은 정보 : {}", user );
+
+        log.info("리턴값 확인 {} ", factory.selectFrom(officetel)
+                .orderBy(officetel.id.desc())
+                .where(officetel.user.eq(user))
                 .fetch()
                 .stream()
-                .filter(i -> i.getUser().equals(dto.getUser()))
+                .map(OfficetelDAOImpl::entityToDto)
+                .toList());
+
+        return factory.selectFrom(officetel)
+                .orderBy(officetel.id.desc())
+                .where(officetel.user.eq(user))
+                .fetch()
+                .stream()
                 .map(OfficetelDAOImpl::entityToDto)
                 .toList();
     }
     public List<OfficetelDTO> getAllOfficetel(Pageable pageable) {
         return factory.selectFrom(officetel)
+                .orderBy(officetel.id.desc())
                 .offset((pageable.getPageNumber() - 1) + pageable.getPageSize())
                 .limit(pageable.getPageSize())
                 .fetch()
@@ -41,6 +54,7 @@ public class OfficetelDAOImpl implements OfficetelDAO {
 
     public List<OfficetelDTO> getAllOfficetelNoPage() {
         return factory.selectFrom(officetel)
+                .orderBy(officetel.id.desc())
                 .fetch()
                 .stream()
                 .map(OfficetelDAOImpl::entityToDto)
@@ -49,6 +63,7 @@ public class OfficetelDAOImpl implements OfficetelDAO {
 
     public List<OfficetelDTO> getOfficetelById(Long id) {
         return factory.selectFrom(officetel)
+                .orderBy(officetel.id.desc())
                 .fetch()
                 .stream()
                 .filter(i -> i.getAddressId().equals(id))
@@ -78,18 +93,19 @@ public class OfficetelDAOImpl implements OfficetelDAO {
             Long maxCost = Long.parseLong(cost.get(1))*10000;
             costBuilder.and(officetel.price.gt(lowCost));
             costBuilder.and(officetel.price.lt(maxCost));
-
         }
 
         BooleanBuilder finalBuilder = oTvalueBuilder.and(pTvalueBuilder).and(costBuilder);
 
         return factory.selectFrom(officetel)
                 .where(finalBuilder)
+                .orderBy(officetel.id.desc())
                 .fetch()
                 .stream()
                 .map(OfficetelDAOImpl::entityToDto)
                 .toList();
     }
+
 
     static OfficetelDTO entityToDto(OfficetelModel officetelModel) {
         return OfficetelDTO.builder()
@@ -106,7 +122,7 @@ public class OfficetelDAOImpl implements OfficetelDAO {
                 .owner(officetelModel.getOwner())
                 .listingDate(officetelModel.getListingDate())
                 .monthlyRent(officetelModel.getMonthlyRent())
+                .user(officetelModel.getUser())
                 .build();
     }
-
 }

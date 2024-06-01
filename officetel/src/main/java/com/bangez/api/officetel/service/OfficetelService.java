@@ -32,6 +32,7 @@ public interface OfficetelService {
                 .owner(officetelModel.getOwner())
                 .listingDate(officetelModel.getListingDate())
                 .monthlyRent(officetelModel.getMonthlyRent())
+                .user(officetelModel.getUser())
                 .build();
     }
 
@@ -50,6 +51,7 @@ public interface OfficetelService {
                 .description(dto.getDescription())
                 .owner(dto.getOwner())
                 .listingDate(localdate)
+                .user(dto.getUser())
                 .build();
     }
 

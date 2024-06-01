@@ -5,31 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ed46041-8ea9-4407-9b2e-f253ad410c0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/officetel.officetel.main~1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/common/component/security/JwtProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/common/component/security/TokenVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/common/service/CommandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/common/service/QueryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/user/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/user/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/user/model/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/user/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/user/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/user/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/officetel.officetel.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/officetel/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/controller/OfficetelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/controller/OfficetelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/controller/OfficetelRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/controller/OfficetelRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/model/OfficetelDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/model/OfficetelDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/model/OfficetelModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/model/OfficetelModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/repository/OfficetelDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/repository/OfficetelDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/repository/OfficetelDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/repository/OfficetelDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/repository/OfficetelJPQLRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/repository/OfficetelJPQLRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/officetel/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/officetel/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +163,7 @@
       <workItem from="1716796002600" duration="821000" />
       <workItem from="1716796854764" duration="11354000" />
       <workItem from="1716896367333" duration="8000" />
-      <workItem from="1717111230155" duration="33323000" />
+      <workItem from="1717111230155" duration="40429000" />
     </task>
     <servers />
   </component>
