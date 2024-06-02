@@ -20,7 +20,6 @@ public class OfficetelDAOImpl implements OfficetelDAO {
     private final JPAQueryFactory factory;
     private final QOfficetelModel officetel = QOfficetelModel.officetelModel;
 
-
     public List<OfficetelDTO> getOfficetelByUser(String user){
         log.info("입력받은 정보 : {}", user );
 
@@ -62,11 +61,11 @@ public class OfficetelDAOImpl implements OfficetelDAO {
     }
 
     public List<OfficetelDTO> getOfficetelById(Long id) {
+        log.info("입력받은 정보 : {}", id );
         return factory.selectFrom(officetel)
-                .orderBy(officetel.id.desc())
+                .where(officetel.id.eq(id))
                 .fetch()
                 .stream()
-                .filter(i -> i.getAddressId().equals(id))
                 .map(i -> entityToDto(i))
                 .toList();
     }
