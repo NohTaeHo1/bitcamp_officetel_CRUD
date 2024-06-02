@@ -1,7 +1,3 @@
-insert into users (id, username, password, email, name, phone, job) values (1, 'Littletrang', 'littleT@', 'ldannel0@ovh.net', '김민준', '18-535-5338', 'VP Sales');
-insert into users (id, username, password, email, name, phone, job) values (2, 'Littlaerg', 'littleT@', 'ldannel0@ovh.net', '나비', '18-535-5338', 'VP Sales');
-insert into users (id, username, password, email, name, phone, job) values (3, 'Litwegww', 'littleT@', 'ldannel0@ovh.net', '다람쥐', '18-535-5338', 'VP Sales');
-
 
 
 INSERT INTO officetels (building_name, address_id, property_type, price, area, floor, direction, description, owner, listing_date, owner_type, monthly_rent)

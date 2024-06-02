@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ed46041-8ea9-4407-9b2e-f253ad410c0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqlDataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9c1e08e8-1804-49d0-997c-6281bdd4f310.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9c1e08e8-1804-49d0-997c-6281bdd4f310.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/controller/OfficetelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/controller/OfficetelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/controller/OfficetelRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/controller/OfficetelRouter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/repository/OfficetelDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/repository/OfficetelDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/repository/OfficetelJPQLRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/officetel/repository/OfficetelJPQLRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/java/com/bangez/api/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/officetel/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/officetel/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +80,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -84,9 +95,10 @@
   "keyToString": {
     "Gradle.Build officetel.executor": "Run",
     "Gradle.C:/Users/bitcamp/docker_pod/officetel/officetel/build.gradle.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "hp-laptop",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/bitcamp/docker_pod/officetel/officetel/src/main/java/com/bangez/api/common/component",
     "node.js.detected.package.eslint": "true",
@@ -94,10 +106,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "trusted.hosts",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -121,7 +133,7 @@
   <component name="RunManager" selected="Spring Boot.OfficetelApplication">
     <configuration name="OfficetelApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="officetel.officetel.main~1" />
+      <module name="com.aws.officetel.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bangez.api.OfficetelApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,8 +151,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
       </set>
     </attachedChunks>
   </component>
@@ -164,6 +175,9 @@
       <workItem from="1716796854764" duration="11354000" />
       <workItem from="1716896367333" duration="8000" />
       <workItem from="1717111230155" duration="40429000" />
+      <workItem from="1717298384528" duration="652000" />
+      <workItem from="1717299067650" duration="12620000" />
+      <workItem from="1717322413385" duration="3903000" />
     </task>
     <servers />
   </component>
