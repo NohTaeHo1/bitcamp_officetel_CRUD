@@ -35,7 +35,7 @@ public class OfficetelController {
         return ResponseEntity.ok(offictelService.insert(dto));
     }
 
-    @PutMapping( "/modify")
+    @PatchMapping( "/modify")
     public ResponseEntity<MessengerVo> modify(@RequestBody OfficetelDTO dto) {
         log.info("입력받은 정보 : {}", dto );
         return ResponseEntity.ok(offictelService.modify(dto));
@@ -57,7 +57,7 @@ public class OfficetelController {
             @RequestParam(value = "user", required = false) String user,
             Pageable pageable
     ) {
-        log.info("user" + user);
+        log.info("id" + id);
         long totalCount = offictelService.countOfficetel();
         PageDTO pageDto = pageService.getPageDTO(totalCount, pageable.getPageSize(), pageable.getPageNumber());
         List<?> o = router.execute(q, dto, oTvalue, pTvalue, cost, pageable, id, user);
