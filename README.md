@@ -15,7 +15,7 @@
 
 ## 기술 스택
 - **프레임워크**: Spring Boot 3
-- **데이터베이스**: H2 (개발용), MySQL (운영용)
+- **데이터베이스**: MySQL
 - **ORM**: Spring Data JPA
 - **쿼리**: JPQL, QueryDSL
 - **보안**: JWT
